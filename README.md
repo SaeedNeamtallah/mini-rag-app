@@ -1,4 +1,7 @@
 # mini-rag-app
+#This is a minimal implementation of the RAG model for question answering.
+
+
 # mini-rag-app
 
 ## Requirements
