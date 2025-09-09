@@ -1,8 +1,5 @@
 # mini-rag-app
-## This is a minimal implementation of the RAG model for question answering.
 
-
-# mini-rag-app
 
 ## Requirements
 - Python 3.10
@@ -40,5 +37,4 @@ Check the notebook and video for instructions.
 2. Setup the environment variables:
    ```bash
    cp .env.example .env
-   ```
-   
+
