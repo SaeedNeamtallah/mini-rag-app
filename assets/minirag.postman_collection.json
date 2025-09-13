@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "162ca22d-93cf-47df-a340-0fa478ef9e51",
+		"name": "minirag",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48327770",
+		"_collection_link": "https://saeedneamatallah-8442240.postman.co/workspace/Saeed-Neamatallah's-Workspace~5589ffca-dfcc-471d-8685-290a73b9b080/collection/48327770-162ca22d-93cf-47df-a340-0fa478ef9e51?action=share&source=collection_link&creator=48327770"
+	},
+	"item": [
+		{
+			"name": "api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/api/v1/\n",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"\n"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api",
+			"value": ""
+		},
+		{
+			"key": "api9000",
+			"value": ""
+		}
+	]
+}
