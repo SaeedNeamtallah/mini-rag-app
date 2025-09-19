@@ -37,3 +37,7 @@ Check the notebook and video for instructions.
    ```bash
    cp .env.example .env
    ```
+
+
+   #run
+   
