@@ -37,4 +37,3 @@ Check the notebook and video for instructions.
 2. Setup the environment variables:
    ```bash
    cp .env.example .env
-
