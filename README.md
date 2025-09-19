@@ -1,5 +1,6 @@
 # mini-rag-app
 
+
 ## Requirements
 - Python 3.10
 
@@ -36,8 +37,3 @@ Check the notebook and video for instructions.
 2. Setup the environment variables:
    ```bash
    cp .env.example .env
-   ```
-
-
-   #run
-   
