@@ -121,11 +121,11 @@ async def upload_data(
         raise HTTPException(status_code=500, detail="Storage is unavailable")
 
     # Ensure generate_unique_filename returns a safe name (not a path)
-    unique_name = data_controller.generate_unique_filename(
+    file_path , file_id = data_controller.generate_unique_filepath(
         original_filename=file.filename, project_id=project_id
     )
     # Defensive: drop any path components if function returns something unexpected
-    unique_name = os.path.basename(unique_name)
+    unique_name = os.path.basename(file_id)
     file_path = os.path.join(project_dir_path, unique_name)
 
     # 4) Write file in chunks
@@ -149,5 +149,6 @@ async def upload_data(
         content={
             "message": f"File '{file.filename}' uploaded successfully to project '{project_id}'.",
             "stored_as": unique_name,
+            "file_id": file_id,
         },
     )
