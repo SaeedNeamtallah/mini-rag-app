@@ -50,7 +50,8 @@ class DataController(BaseController):
     # organic one
 
 
-    def generate_unique_filename(self, original_filename: str, project_id: str) -> str:
+    def generate_unique_filepath(self, original_filename: str, project_id: str) -> str:
+        # returns the full path and the new file name
 
         random_key = self.generate_random_string()
         project_path = ProjectController().get_project_path(project_id)
@@ -62,7 +63,7 @@ class DataController(BaseController):
             new_file_path = os.path.join(project_path, f"{random_key}_{cleaned_file_name}")
 
 
-        return new_file_path
+        return new_file_path ,  random_key+"_"+cleaned_file_name
     
 
 
